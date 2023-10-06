@@ -1,0 +1,41 @@
+---
+import '@fontsource/prompt';
+import { Image } from 'astro:assets';
+import logo from "../assets/logo.png"
+const links = [
+  {title: "👋 Need a Website?", path: "/web-design"},
+  {title: "🚀 Development Subscriptions for Startups", path: "/development-subscription"},
+  {title: "🖥️ Visit Our Website", path: "/"}, 
+  {title: "💼 Latest Projects", path: "/portfolio"},
+  {title: "🗓️ Book a Call", path: "https://calendly.com/richardsprins/discovery-call", external: true},
+  {title: "📞 Need Support?", path: "tel:+12086961474"},
+  ]
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Useful Links - Extensibl Media</title>
+  </head>
+  <body class="bg-brand-background">
+
+    <div class="mt-8 max-w-2xl mx-auto">
+      <div class="mx-4 border-2 rounded-xl border-brand-primary p-8 flex flex-col items-center gap-8">
+        <Image src={logo} alt="Extensibl Media Logo" class="h-auto w-32"/>
+        <p class="text-center">Welcome to Extensibl Media, how can we help you today?</p>
+        <div class="flex flex-col gap-4">
+          {links.map(link => (
+            <a class="shadow-md p-4 rounded-xl w-full bg-brand-primary text-center" href={link.path} target={link?.external ? "_blank" : "_self"} rel="noopener noreferrer">{link.title}</a>
+          ))}
+        </div>
+        <div class="flex gap-2">
+
+        </div>
+      </div>
+    </div>
+  </body>

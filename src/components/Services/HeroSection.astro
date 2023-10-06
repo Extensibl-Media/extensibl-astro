@@ -1,0 +1,28 @@
+---
+const { heading, description, headingImage } = Astro.props
+console.log(headingImage)
+---
+
+<section class="container mx-auto pt-0 lg:pt-20 py-20 flex flex-col gap-12 lg:gap-20 px-4">
+  <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold">
+    {heading}
+  </h1>
+  <picture class="w-full">
+    <source
+    media="(max-width: 600px)"
+    srcset={headingImage.mobile}
+    />
+    <source
+    media="(min-width: 601px)"
+    srcset={headingImage.desktop}
+    />
+    <img
+    loading="lazy"
+    decoding="async"
+    alt=""
+    class="w-full rounded-xl"
+    src={headingImage.desktop}
+    />
+  </picture>
+  <p class="md:text-lg">{description}</p>
+</section>

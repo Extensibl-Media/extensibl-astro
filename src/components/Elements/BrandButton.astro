@@ -1,0 +1,41 @@
+---
+interface Props {
+  title: string;
+  path: string;
+}
+const {title, path} = Astro.props
+---
+
+<a href={path}><button class="cta-button">{title}</button></a>
+
+<style>
+.cta-button {
+  padding: 1em 1.5em;
+  background-color: #7de2d1;
+  color: black;
+  position: relative;
+  /* border: 2px solid transparent; */
+  border-radius: 12px;
+  transition: all 0.5s ease;
+}
+
+.cta-button::before {
+	position: absolute;
+  content: "";
+	width: 100%;
+	height: 100%;
+	top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 2px solid black;
+  transform: translate3d(-0.5em, -0.5em, 0);
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  
+}
+
+.cta-button:hover::before{
+	transform: translate3d(0, 0, 0);
+}
+</style>

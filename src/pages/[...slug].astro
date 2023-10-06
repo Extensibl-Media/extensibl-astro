@@ -1,0 +1,20 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "../layouts/Layout.astro";
+import HeroSection from "../components/Services/HeroSection.astro";
+export async function getStaticPaths() {
+  const allServices = await getCollection('services')
+
+  return allServices.map(entry => ({
+      params: {slug: entry.slug}, props: {entry}
+  }))
+}
+
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+---
+
+<Layout title={entry.data.title}>
+  <HeroSection heading={entry.data.name} description={entry.data.description} headingImage={entry.data.headingImage}/>
+  
+</Layout>

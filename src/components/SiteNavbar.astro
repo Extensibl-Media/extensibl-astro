@@ -1,0 +1,82 @@
+---
+import { Astronav, MenuIcon, MenuItems } from "astro-navbar";
+import { NavMap } from "../utils/NavMap";
+import Dropdown from "../components/Elements/Dropdown.astro";
+import BrandButton from "./Elements/BrandButton.astro";
+import { Image } from "astro:assets";
+import logo from "../assets/logo.png"
+---
+
+<header class="px-4 py-8">
+  <nav
+    class="flex flex-col lg:flex-row justify-between items-center container mx-auto"
+  >
+    <Astronav>
+      <div class="flex w-full lg:w-auto items-center justify-between">
+        <a href="/" class="text-2xl"
+          ><Image src={logo} alt="Extensibl Media Logo" class="w-36"/>
+        </a>
+        <div class="block lg:hidden">
+          <MenuIcon class="w-4 h-4 text-gray-800" />
+        </div>
+      </div>
+      <MenuItems class="hidden w-full lg:w-auto mt-2 lg:flex lg:mt-0">
+        <ul class="flex flex-col lg:flex-row lg:gap-3">
+          {
+            NavMap.links.map((item, index) => (
+              <>
+                {item.children && (
+                  <Dropdown
+                    title={item.title}
+                    children={item.children}
+                    lastItem={index === NavMap.links.length - 1}
+                  />
+                )}
+
+                {!item.children && (
+                  <li>
+                    <a
+                      href={item.path}
+                      class="flex lg:px-3 py-2 text-gray-600 hover:text-gray-900"
+                    >
+                      {item.title}
+                    </a>
+                  </li>
+                )}
+              </>
+            ))
+          }
+        </ul>
+        <div class="lg:hidden flex flex-col mt-3 gap-4">
+          {
+            NavMap.cta.secondary && (
+              <a
+                href={NavMap.cta.secondary.path}
+                class="text-center px-4 py-2 bg-gray-100"
+              >
+                {NavMap.cta.secondary.title}
+              </a>
+            )
+          }
+          <a
+            href={NavMap.cta.primary.path}
+            class="text-center px-4 py-2 bg-black text-white"
+            >{NavMap.cta.primary.title}</a
+          >
+        </div>
+      </MenuItems>
+    </Astronav>
+    <div>
+      <div class="hidden lg:flex items-center gap-4">
+        {
+          NavMap.cta.secondary && (
+            <a href={NavMap.cta.secondary.path} class="px-4 py-2">
+              {NavMap.cta.secondary.title}
+            </a>
+          )
+        }
+        <BrandButton title={NavMap.cta.primary.title} path={NavMap.cta.primary.path}/>
+      </div>
+    </div>
+  </nav>
+</header>
