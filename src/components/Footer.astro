@@ -18,9 +18,22 @@ import { NavMap } from "../utils/NavMap";
         <Image src={logo} alt="Extensibl Media Logo" class="w-36 mb-4"/>
         <p class="text-md font-semibold">Subscribe to our Newsletter</p>
         <p class="text-sm">Join our newsletter to stay up to date on new updates and news!</p>
-        <form id="newsletter-form" class="flex my-4">
+        <form
+        name="newsletter"
+          method="POST"
+          netlify-honeypot="bot-field"
+          netlify
+          data-netlify="true"
+          id="newsletter-form" class="flex my-4"
+         >
           <input required name="email" type="email" class="grow rounded-l-xl pl-4 bg-brand-background" placeholder="Enter your email"/>
-          <button class="py-2 px-4 bg-black text-white rounded-r-xl">Subscribe</button>
+          <p class="hidden">
+            <label>
+              Don’t fill this out if you’re human: <input name="bot-field" />
+            </label>
+          </p>
+          <input type="hidden" name="form-name" value="newsletter" />
+          <button class="py-2 px-4 bg-black text-white rounded-r-xl" type="submit">Subscribe</button>
         </form>
         <p id="success" class="hidden my-4">Thank you for signing up!</p>
         <p class="text-xs">* By subscribing you agree to with our Privacy Policy and provide consent to receive updates from our company.<p/>
@@ -70,32 +83,3 @@ import { NavMap } from "../utils/NavMap";
     fill: #7DE2D1;
 }
 </style>
-
-<script>
-  let submitted = false;
-
-  const form = document.getElementById("newsletter-form")
-
-  const sumbitForm = async (event: any) => {
-    event.preventDefault()
-    // console.log(event)
-    const formData = Object.fromEntries(new FormData(event.target).entries())
-    // console.log(Object.fromEntries(formData.entries()))
-    // console.log(formData.email)
-
-    const response = await fetch("https://api.mailerlite.com/api/v2/groups/93694530453243727/subscribers", {method: 'POST', headers: {
-      "Access-Control-Allow-Origin": "*",
-      "Access-Control-Allow-Credentials": "true",
-      "Content-Type": 'application/json',
-      "Access-Control-Allow-Methods": "GET,HEAD,OPTIONS,POST,PUT",
-      "Access-Control-Allow-Headers": "x-mailerlite-apikey, *",
-      "X-MailerLite-ApiKey": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI0IiwianRpIjoiNzUxM2VmNTlkODczYzg3OTgxNDA0NTEzNjc3NTZkOTg4MGI1Yjg4MWJhZDA0MTkwNDA3MDZlZDcyZjhlY2RjZGI1Zjc1NDcwNDc2ZjU3YTciLCJpYXQiOjE2ODkyODg3NzkuMzg2NzI3LCJuYmYiOjE2ODkyODg3NzkuMzg2NzMxLCJleHAiOjQ4NDQ5NjIzNzkuMzgwODE5LCJzdWIiOiI1Mzk3NzYiLCJzY29wZXMiOltdfQ.CDlV55QPMY1IaL6yCh2SXIOCw-zTSy4HJjTap0YLX6w6iWFLxCs709wnezol94h3tE-XgOAGvrdS8aiy8G0LMvOq4_v4D8V1th4W3VxGAxs2B47_-JZALFFjSsc68XpXxRd24ppcWpojZeqcUEsVTpK-v4g4v0puHVlssZG0J0du2tpEEAva0i2J-b8AQ-HTgg2JK6rlkTZTu0WyG8YiyWM8g6P8yxV06ucECFIp75KCgL1omaXUsQQ-xpBwNH-xrKC_WWJYS_PN9HmSvX62zJTtQD7CuaGO92wGcTpF5tLs6MnMqTxtRwgnp__b4uDsnMOMreXSvVWsaTlMvnf6XoCAz9_bHuoJlNgx8xi8NeOQPt8gV-rqsx8NG-2iX3jx5Y72vtzE2eT_fEO6kTzYSAGdIN7SoR9kEBvXU3QRbZmG4wenV9VxyxjWL_GNafW2G9NP396hFELFeGbUirXOXtZURkQTKfCyBZNtR6rN1KiBaZCkxSviy6ARPl4A2PMcrSRcPkZh_M_5R7bzG-7DDCWK7KoB1ChM4Nd2uLbguaRxUV8oVhIsAp0vM3DVB_-AKceCnvjsF-hwrDestoYewU9VOw2ayYRODJ_5JCeL5aGm_aNLDli30cAmas6CcYg6cejgVlrb92wOKmh8KsovXH0n3Ry_7ao9pk5C8ciNVrI",
-    }, body: JSON.stringify({email: formData.email, active: true})})
-
-    console.log(await response.json())
-  }
-  if(form){
-    form.onsubmit = sumbitForm
-  }
-
-</script>
