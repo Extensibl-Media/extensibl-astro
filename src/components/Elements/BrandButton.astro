@@ -2,11 +2,12 @@
 interface Props {
   title: string;
   path: string;
+  type?: "button" | "submit" | "reset" | null | undefined;
 }
-const {title, path} = Astro.props
+const {title, path, type = "button"} = Astro.props
 ---
 
-<a href={path}><button class="cta-button">{title}</button></a>
+<a href={path}><button type={type} class="cta-button">{title}</button></a>
 
 <style>
 .cta-button {

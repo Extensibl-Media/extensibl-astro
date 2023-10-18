@@ -1,0 +1,37 @@
+---
+const {process} = Astro.props
+---
+
+<section class="container mx-auto pt-0 lg:pt-20 py-20 px-4">
+  <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold">{process.title}</h2>
+  <p class="mt-12">{process.supportingText}</p>
+  <div class="grid grid-cols-3 gap-8">
+    <div class="mt-12 flex flex-col gap-8 col-span-3 lg:col-span-2">
+      {process.steps.map((step: any) => (
+        <div class="grid grid-cols-2">
+          <p class="col-span-2 lg:col-span-1 text-xl md:text-2xl lg:text-3xl font-bold">{step.title}</p>  
+          <p class="col-span-2 lg:col-span-1">{step.description}</p>  
+        </div>
+      ))}
+    </div>
+    <div class="col-span-3 md:col-span-1 mt-12">
+      <picture class="sticky top-4">
+        <source
+        media="(max-width: 600px)"
+        srcset={process.image.mobile}
+        />
+        <source
+        media="(min-width: 601px)"
+        srcset={process.image.desktop}
+        />
+        <img
+        loading="lazy"
+        decoding="async"
+        alt=""
+        class="w-full rounded-xl"
+        src={process.image.desktop}
+        />
+      </picture>
+    </div>
+  </div>
+</section>

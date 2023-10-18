@@ -1,0 +1,54 @@
+---
+import BrandButton from "../Elements/BrandButton.astro";
+const { pricing } = Astro.props
+---
+
+<section class="container mx-auto pt-0 lg:pt-20 py-20 flex flex-col gap-12 lg:gap-16 px-4">
+  <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold">Pricing</h2>
+  <div class=" flex flex-col gap-8">
+    {pricing.map((tier: any) => (
+      <div class="border border-black rounded-xl p-4 lg:p-6">
+        <div class="flex flex-col lg:flex-row justify-between gap-6">
+          <div>
+            <h3 class="text-2xl md:text-3xl lg:text-4xl font-bold">{tier.title}</h3>
+            <p class="text-lg md:text-xl ld:text-2xl">{tier.headline}</p>
+            <p class="max-w-xl my-4">{tier.description}</p>
+            <BrandButton title="Get Started" path="#"/>
+          </div>
+          <div>
+            {
+              () => {
+                switch(tier.type){
+                  case 'recurring': 
+                    return <p class="text-2xl md:text-3xl lg:text-4xl font-bold w-fit lg:ml-auto">Starting at ${tier.price.toString()}<span class="text-lg md:text-xl lg:text-2xl">{tier.type === "recurring" && '/mo'}</span></p>
+                  case 'fixed':
+                    return <p class="text-2xl md:text-3xl lg:text-4xl font-bold w-fit lg:ml-auto">Contact us for quote</p>
+                  default:
+                    return null
+                }
+              }
+            }
+            <ul class="grid grid-cols-2 max-w-xl gap-4 mt-4">
+              {tier.includes.map((item: any) => (
+                <li class="col-span-2 md:col-span-1 flex items-center gap-2">
+                  <span class="h-fit">
+                    <lord-icon
+                        src="https://cdn.lordicon.com/ivayzoru.json"
+                        trigger="loop"
+                        delay=2000
+                        colors="outline:#121331,primary:#121331,secondary:#ebe6ef"
+                        style="width:25px;height:25px">
+                    </lord-icon>
+                  </span>
+                  <span>{item}</span>
+                </li>
+              ))}
+              </ul>
+          </div>
+          </div>
+      </div>
+    ))}
+  </div>
+</section>
+
+<script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
