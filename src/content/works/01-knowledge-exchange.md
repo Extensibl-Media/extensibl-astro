@@ -2,7 +2,7 @@
 title: Knowledge Exchange
 headline: Enhancing Digital Communities
 releaseDate: 1697221983
-category: software-development
+category: Software Development
 client: Knowledge Exchange
 url: https://www.knowledgeexchange.com
 images: 

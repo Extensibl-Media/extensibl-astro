@@ -1,16 +1,24 @@
 ---
-import BrandButton from "../Elements/BrandButton.astro";
-
+import { Image } from "astro:assets";
+import DoubleCheck from "../../assets/double-check.svg"
 ---
 
-<section class="container mx-auto py-20 px-4">
-  <div class="flex flex-col lg:flex-row gap-8 lg:gap-12">
-    <p class="w-full lg:w-1/4">About Us</p>
-    <div class=" w-full lg:w-3/4">
-      <p class="text-xl md:text-3xl font-semibold mb-12">
-        We are a creative agency that specializes in Web Design, SEO, Social Media and Web presence management. Our experienced team works closely with clients to deliver customized solutions that meet their specific needs.
-      </p>
-      <BrandButton title="Learn More" path="#"/>
+<section class="py-20 lg:py-36 px-4 bg-brand-dark mt-24">
+  <div class="container mx-auto">
+  <div class="grid grid-cols-8 gap-12">
+    <div class="col-span-8 lg:col-span-4 flex items-center">
+      <img src="https://res.cloudinary.com/dpoanqywm/image/upload/v1701374558/Home_Social_Media_wtqh9y.png" class="w-full"/>
+    </div>
+    <div class="col-span-8 lg:col-span-4 text-brand-background flex flex-col justify-center">
+      <h2 class="text-3xl md:text-4xl lg:text-5xl">Having trouble finding reliable freelancers, but lack the budget to hire an entire in-house production team?</h2>
+      <p class="max-w-xl py-4 text-xl">Skip the back and forth and give your hiring team a break with our scalable subscriptions. Get instant access to top design and development talent, and a dedicated Project Manager to keep your progress moving forward. </p>
+      <div class="flex flex-col md:flex-row gap-2 md:gap-4 mt-12">
+        <div class="flex items-center gap-2 py-1 px-2 rounded-full text-sm text-brand-background grow-0 w-fit"><Image src={DoubleCheck} alt="Collaborate together icon" class="text-brand-primary h-6 w-6"/> <span>No Endless Profile Scrolling</span></div>
+        <div class="flex items-center gap-2 py-1 px-2 rounded-full text-sm text-brand-background grow-0 w-fit"><Image src={DoubleCheck} alt="Collaborate together icon" class="text-brand-primary h-6 w-6"/> <span>No Draining Interviews</span></div>
+        <div class="flex items-center gap-2 py-1 px-2 rounded-full text-sm text-brand-background grow-0 w-fit"><Image src={DoubleCheck} alt="Collaborate together icon" class="text-brand-primary h-6 w-6"/> <span>No Hiring Fees</span></div>
+
+      </div>
     </div>
   </div>
+  <div>
 </section>

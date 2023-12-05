@@ -1,0 +1,109 @@
+---
+import { Image } from "astro:assets";
+import DoubleCheck from "../../assets/double-check.svg"
+import BrandButton from "../Elements/BrandButton.astro"
+import BrandButtonAlt from "../Elements/BrandButtonAlt.astro"
+---
+
+<section class="container mx-auto lg:pt-20 py-20 lg:gap-16 px-4">
+  <div class="flex flex-col lg:flex-row justify-center gap-8 mt-12 lg:mt-20">
+    <div class="lg:max-w-[300px] w-full border-2 border-gray-200 rounded-lg flex flex-col">
+      <div class="p-4 text-center bg-gradient-to-b from-gray-50 to-gray-100 rounded-t-lg border-b-2 border-gray-200 text-xl font-bold">Ecommerce</div>
+      <div class="p-4 bg-white rounded-b-md grow flex flex-col">
+        <p class="text-brand-dark text-center mb-4">STARTING AT</p>
+        <div class="flex items-start justify-center text-brand-primary text-6xl md:text-7xl text-center">
+          <span class="align-text-top text-2xl">$</span>
+          <span class="font-bold">5k</span>
+        </div>
+        <div class="flex flex-col gap-2 my-6">
+          <div class="flex items-center gap-2 py-1 px-2 rounded-full text-regular text-brand-dark grow-0 w-fit">
+            <Image src={DoubleCheck} alt="Collaborate together icon" class="text-brand-primary h-6 w-6"/>
+            <span>Custom designed storefront</span>
+          </div>
+          <div class="flex items-center gap-2 py-1 px-2 rounded-full text-regular text-brand-dark grow-0 w-fit">
+            <Image src={DoubleCheck} alt="Collaborate together icon" class="text-brand-primary h-6 w-6"/>
+            <span>Bespoke Shopify storefront that showcases your brand</span>
+          </div>
+          <div class="flex items-center gap-2 py-1 px-2 rounded-full text-regular text-brand-dark grow-0 w-fit">
+            <Image src={DoubleCheck} alt="Collaborate together icon" class="text-brand-primary h-6 w-6"/>
+            <span>Easy to edit and manage</span>
+          </div>
+          <div class="flex items-center gap-2 py-1 px-2 rounded-full text-regular text-brand-dark grow-0 w-fit">
+            <Image src={DoubleCheck} alt="Collaborate together icon" class="text-brand-primary h-6 w-6"/>
+            <span>Other Ecommerce platform options available</span>
+          </div>
+        </div>
+        <div class="flex justify-center mt-auto">
+          <BrandButtonAlt title="Get Started" path="https://calendly.com/extensibl-media/discovery-call"/>
+        </div>
+      </div>
+    </div>
+    <div class="lg:scale-125 lg:max-w-[300px] w-full border-2 border-gray-200 rounded-lg flex flex-col lg:shadow-lg">
+      <div class="p-4 text-center bg-gradient-to-b to-brand-primary from-teal-200 rounded-t-md border-b-2 border-gray-200 text-xl font-bold">Standard</div>
+      <div class="p-4 bg-white rounded-b-md grow flex flex-col">
+        <p class="text-brand-dark text-center mb-4">STARTING AT</p>
+        <div class="flex items-start justify-center text-brand-primary text-6xl md:text-7xl text-center">
+          <span class="align-text-top text-2xl">$</span>
+          <span class="font-bold">200</span>
+          <span class="text-2xl self-end">/mo</span>
+
+        </div>
+        <div class="flex flex-col gap-2 my-6">
+          <div class="flex items-center gap-2 py-1 px-2 rounded-full text-regular text-brand-dark grow-0 w-fit">
+            <Image src={DoubleCheck} alt="Collaborate together icon" class="text-brand-primary h-6 w-6"/>
+            <span>Unlimited Edits</span>
+          </div>
+          <div class="flex items-center gap-2 py-1 px-2 rounded-full text-regular text-brand-dark grow-0 w-fit">
+            <Image src={DoubleCheck} alt="Collaborate together icon" class="text-brand-primary h-6 w-6"/>
+            <span>Hosting included</span>
+          </div>
+          <div class="flex items-center gap-2 py-1 px-2 rounded-full text-regular text-brand-dark grow-0 w-fit">
+            <Image src={DoubleCheck} alt="Collaborate together icon" class="text-brand-primary h-6 w-6"/>
+            <span>24/7 Customer Support</span>
+          </div>
+          <div class="flex items-center gap-2 py-1 px-2 rounded-full text-regular text-brand-dark grow-0 w-fit">
+            <Image src={DoubleCheck} alt="Collaborate together icon" class="text-brand-primary h-6 w-6"/>
+            <span>Lifetime Updates</span>
+          </div>
+          <div class="flex items-center gap-2 py-1 px-2 rounded-full text-regular text-brand-dark grow-0 w-fit">
+            <Image src={DoubleCheck} alt="Collaborate together icon" class="text-brand-primary h-6 w-6"/>
+            <span>Highly Optimized for Conversion</span>
+          </div>
+        </div>
+        <div class="flex justify-center mt-auto">
+          <BrandButton title="Get Started" path="https://calendly.com/extensibl-media/discovery-call"/>
+        </div>
+      </div>
+    </div>
+    <div class="lg:max-w-[300px] w-full border-2 border-gray-200 rounded-lg flex flex-col">
+      <div class="p-4 text-center bg-gradient-to-b from-gray-50 to-gray-100 rounded-t-lg border-b-2 border-gray-200 text-xl font-bold">Enterprise</div>
+      <div class="p-4 bg-white rounded-b-md grow flex flex-col">
+        <p class="text-brand-dark text-center mb-4">CUSTOM</p>
+        <div class="flex items-start justify-center text-brand-primary text-3xl md:text-5xl text-center">
+          <span class="font-bold">Contact Us</span>
+        </div>
+        <div class="flex flex-col gap-2 my-6">
+          <div class="flex items-center gap-2 py-1 px-2 rounded-full text-regular text-brand-dark grow-0 w-fit">
+            <Image src={DoubleCheck} alt="Collaborate together icon" class="text-brand-primary h-6 w-6"/>
+            <span>Custom Website & Application</span>
+          </div>
+          <div class="flex items-center gap-2 py-1 px-2 rounded-full text-regular text-brand-dark grow-0 w-fit">
+            <Image src={DoubleCheck} alt="Collaborate together icon" class="text-brand-primary h-6 w-6"/>
+            <span>Run your business the way you envision it</span>
+          </div>
+          <div class="flex items-center gap-2 py-1 px-2 rounded-full text-regular text-brand-dark grow-0 w-fit">
+            <Image src={DoubleCheck} alt="Collaborate together icon" class="text-brand-primary h-6 w-6"/>
+            <span>Cloud Hosting Available</span>
+          </div>
+          <div class="flex items-center gap-2 py-1 px-2 rounded-full text-regular text-brand-dark grow-0 w-fit">
+            <Image src={DoubleCheck} alt="Collaborate together icon" class="text-brand-primary h-6 w-6"/>
+            <span>Maintenance Packages Available</span>
+          </div>
+        </div>
+        <div class="flex justify-center mt-auto">
+          <BrandButtonAlt title="Book A Call" path="https://calendly.com/extensibl-media/discovery-call"/>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

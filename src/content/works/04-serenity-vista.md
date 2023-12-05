@@ -2,7 +2,7 @@
 title: Serenity Vista
 headline: Adopting New Technologies for Growth
 releaseDate: 1697221983
-category: web-design
+category: Web Design
 client: Serenity Vista
 url: https://www.serenityvista.com
 images: 

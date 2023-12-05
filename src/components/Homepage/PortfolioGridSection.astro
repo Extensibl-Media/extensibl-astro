@@ -1,0 +1,59 @@
+---
+import BrandButton from "../../components/Elements/BrandButton.astro";
+
+const {recentWorks} = Astro.props
+---
+<section class="container mx-auto lg:pt-20 py-20 lg:gap-16 px-4">
+  <h2 class="lg:text-center text-3xl md:text-4xl lg:text-5xl font-semibold !leading-tight">
+    View Our <br /><span class="px-2 bg-brand-primary rounded-lg leading-none">Recent Work</span>
+  </h2>
+  <div class="grid grid-cols-6 gap-8 mt-12 lg:mt-20">
+    {recentWorks?.map((work: any) => (
+      <a href={work.data.url} target="_blank" rel="noopener noreferrer" class="col-span-6 md:col-span-3 lg:col-span-2 w-full aspect-square border-2 border-brand-dark rounded-xl">
+        <div class="relative w-full h-full work-card">
+            <img src={work.data.images.thumbnail} class="rounded-lg"/>
+            <div class="work-details p-8 flex flex-col">
+              <p class="text-3xl font-semibold">{work.data.client}</p>
+              <p class="text-xl font-semibold">{work.data.category}</p>
+              <div class="mt-auto w-20 h-20 rounded-full bg-white flex items-center justify-center text-2xl">➥</div>
+            </div>
+        </div>
+      </a>
+    ))}
+  </div>
+  <div class="mt-16 flex justify-center">
+    <BrandButton title="See More" path="/portfolio"/>
+  </div>
+</section>
+
+<style>
+  .work-details {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    background-color: rgba(125, 226, 209, 0.9);
+    z-index: 10;
+    border-radius: 0.75rem;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .work-details:hover {
+    opacity: 1;
+    transform: scale(0.8); 
+  }
+
+  .work-details * {
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .work-details:hover * {
+    opacity: 1;
+    transform: scale(0.8); 
+  }
+</style>

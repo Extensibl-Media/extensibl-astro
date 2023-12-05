@@ -18,57 +18,46 @@ headingImage:
   desktop: https://res.cloudinary.com/dpoanqywm/image/upload/v1696618791/stephen-phillips-hostreviews-co-uk-shr_Xn8S8QU-unsplash_1_a39tn5.jpg
   headline: A professionally managed web presence for your business
 pricing: 
-  - title: Small Business
-    type: recurring
-    price: 200
-    headline: Modern web solutions for small businesses
-    description: No hassle, stress free, and results-driven web design services for small businesses looking to grow their online presence starting at $200 a month
-    includes: 
-      - Unlimited Edits
-      - Hosting Included
-      - Google Analytics Setup
-      - Google Workspace Setup
-      - 24/7 Customer Service
-      - Lifetime Site Updates
-      - 100% Uptime Monitoring
-      - SEO Rich Website
-      - High Converting Funnel
-      - NO Hidded Fees, ever  
-  - title: Enterprise
+  - title: Expert SEO Strategy
     type: fixed
-    price: 3000
-    headline: High Performance websites for growing businesses
-    description: For medium to large companies that need to build better trust with their customers and reach greater potential with their business
+    price: 200
+    headline: Ensure the growth of your business with expert SEO strategies
+    description: Supercharge your online presence, attract more organic traffic, and help your business rank higher in search engine results.
     includes: 
-      - Highly customized website designed for growth
-      - Custom Business logic to help your customers
-      - 24/7 Customer Service
-      - 100% Uptime Monitoring
-      - SEO Rich Website
-      - High Converting Funnel
-      - NO Hidded Fees, ever  
+      - Increased Visibility
+      - More Organic Traffic
+      - Customized Strategy
+      - Keyword Mastery
+      - Enhanced User Experience
+      - Quality Content
+      - Ethical Link Building
+      - Local SEO Strategy
+      - Transparent Reporting
+      - Continuous Improvement
+      - Proven Results
+    link: ""
 
 process: 
   title: Our Approach
-  supportingText: We take a strategic and client-centric approach to deliver high-converting websites. Our goal is to create digital experiences that not only look stunning but also drive results. We understand that each project is unique, and therefore, we tailor our approach to meet the specific needs of our clients. Here's how we go about it
+  supportingText: We understand that effective Search Engine Optimization (SEO) is a crucial element of a successful online presence. Our approach is rooted in strategic, data-driven, and ethical practices that help your business climb the search engine rankings and drive organic traffic.
   image: 
     mobile: https://res.cloudinary.com/dpoanqywm/image/upload/v1697158640/annie-spratt-MChSQHxGZrQ-unsplash_lkbpj2.jpg
     desktop: https://res.cloudinary.com/dpoanqywm/image/upload/v1697158640/annie-spratt-MChSQHxGZrQ-unsplash_1_uttohe.jpg
   steps: 
-    - title: Discovery
-      description: We begin by getting to know your business inside and out. Our team conducts in-depth research and analysis to understand your industry, target audience, and competition. We listen to your goals, vision, and requirements, ensuring we have a comprehensive understanding of what you want to achieve with your website.
-    - title: Strategy
-      description: Once we have a clear understanding of your objectives, we craft a custom strategy. This strategy outlines the design, functionality, and user experience elements that will be essential in achieving your website's conversion goals. Our team collaborates with you to align our strategy with your business objectives.
-    - title: Design
-      description: Our expert designers work their magic to create a visually appealing and user-friendly website. We prioritize responsive design, ensuring your site looks and works perfectly on all devices. During this phase, we focus on creating a design that reflects your brand identity and engages your target audience effectively.
-    - title: Development
-      description: The development phase brings your website to life. Our skilled developers use the latest technologies and coding practices to build a high-performance website. We pay close attention to site speed, security, and functionality, ensuring a seamless user experience.
-    - title: Testing & Optimization
-      description: Before launching your website, we rigorously test it to identify and rectify any issues. We perform usability testing, cross-browser testing, and ensure that all features and functionalities work as intended. Additionally, we optimize your site for search engines (SEO) to enhance its visibility and ranking.
-    - title: Launch
-      description: With your approval, we launch your website to the world. Our team ensures a smooth transition, and we closely monitor the site's performance during this critical phase. We also provide training and support as needed to ensure you are comfortable managing your new digital asset.
-    - title: Post-Launch Support
-      description: Our commitment doesn't end at launch. We offer ongoing support and maintenance to keep your website up to date, secure, and optimized for peak performance. We are here to address any issues, make updates, and help you grow your online presence.
-    - title: Conversion Tracking and Analytics
-      description: We implement robust analytics tools to monitor your website's performance continually. This data-driven approach helps us make informed decisions to enhance user engagement and drive conversions.
+    - title: Keyword Research and Analysis
+      description: We kick off each SEO project with in-depth keyword research. This involves identifying the most relevant and high-impact keywords and phrases that your target audience is using to find products or services like yours. We also analyze your competition to gain insights into the keywords that are driving their success.
+    - title: On-Page Optimization
+      description: Our team meticulously optimizes your website's on-page elements, including meta tags, headings, content, and image attributes. We ensure that your web pages are not only search engine friendly but also provide valuable and engaging content for your users.
+    - title: Content Strategy
+      description: Quality content is the backbone of effective SEO. We develop a comprehensive content strategy to create, optimize, and publish content that resonates with your audience. Whether it's blog posts, articles, videos, or other content formats, we ensure it's relevant, informative, and aligns with your SEO goals.
+    - title: Technical SEO
+      description: We dive deep into the technical aspects of your website, identifying and resolving issues that might hinder search engine crawlability and user experience. This includes optimizing site speed, mobile-friendliness, and ensuring a secure browsing experience.
+    - title: Link Building
+      description: Our link-building strategy is ethical and focused on quality, not quantity. We acquire high-quality, authoritative backlinks that boost your website's credibility and domain authority. This helps your site climb the search rankings and attract more organic traffic.
+    - title: Local SEO (If Applicable)
+      description: For businesses with a local presence, we optimize your online footprint for local searches. This includes creating and optimizing Google My Business listings, managing customer reviews, and ensuring consistent and accurate business information across the web.
+    - title: Analytics and Monitoring
+      description: We implement robust analytics tools to track your website's performance continually. This data-driven approach helps us make informed decisions to enhance your SEO strategy. We provide regular reports and insights on your website's progress.
+    - title: Ongoing Optimization
+      description: SEO is an ongoing process. We stay committed to optimizing your website and content for search engines and user experience. Our team continuously analyzes performance data and adapts the strategy to changing search engine algorithms and user behavior.
 ---

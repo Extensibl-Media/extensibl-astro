@@ -19,75 +19,61 @@ export const NavMap: {
 } = {
   links: [
     {
-      title: "Home",
-      path: "/",
+      title: "Pricing",
+      path: "/pricing",
     },
-    {
-      title: "About",
-      path: "/about",
-    },
-    {
-      title: "Services",
-      path: "#",
-      children: [
-        { title: "Web Design", path: "/web-design" },
-        {
-          title: "Development for Startups",
-          path: "/development-subscription",
-        },
-        { title: "SEO & Content", path: "/seo-content" },
-        { title: "UI/UX Design", path: "/ui-ux-design" },
-        { title: "Social Media Marketing", path: "/social-media" },
-      ],
-    },
-    // {
-    //   title: "Blog",
-    //   path: "/blog",
-    // },
     {
       title: "Our Work",
-      path: "/work",
+      path: "/portfolio",
     },
+    // {
+    //   title: "Our Experts",
+    //   path: "/who-we-are",
+    // },
     {
-      title: "Contact",
-      path: "/contact-us",
+      title: "Join Our Team",
+      path: "https://extensiblmedia.typeform.com/to/wyYIeQcy",
     },
   ],
   cta: {
-    primary: { title: "Get Started", path: "/contact-us" },
-    secondary: {
-      title: "Log In",
-      path: "http://extensiblmedia.manyrequests.io/",
+    primary: {
+      title: "Get Started",
+      path: "https://calendly.com/extensibl-media/discovery-call",
     },
   },
   footer: {
-    services: [
-      { title: "Web Design", path: "/web-design" },
-      {
-        title: "Development Subscriptions",
-        path: "/development-subscription",
-      },
-      { title: "SEO & Content", path: "/seo-content" },
-      { title: "UI/UX Design", path: "/ui-ux-design" },
-      { title: "Social Media Marketing", path: "/social-media" },
-    ],
-    links: [
-      {
-        title: "About",
-        path: "/about",
-      },
+    "Quick Links": [
+      { title: "Pricing", path: "/pricing" },
       // {
-      //   title: "Our Blog",
-      //   path: "/blog",
+      //   title: "Scope Of Work",
+      //   path: "/scope",
       // },
       {
         title: "Our Work",
-        path: "/work",
+        path: "/portfolio",
       },
       {
-        title: "Contact Us",
-        path: "/contact-us",
+        title: "Join the Team",
+        path: "https://extensiblmedia.typeform.com/to/wyYIeQcy",
       },
+    ],
+    resources: [
+      {
+        title: "Our Blog",
+        path: "/blog",
+      },
+      {
+        title: "Guides",
+        path: "/guides",
+      },
+      {
+        title: "Products",
+        path: "/products",
+      },
+      // {
+      //   title: "FAQ",
+      //   path: "/faq",
+      // },
     ],
     contact: [
       {
@@ -97,7 +83,7 @@ export const NavMap: {
       { title: "+1 (208) 696-1474", path: "tel:+12086961474" },
       {
         title: "Book a Discovery Call",
-        path: "https://calendly.com/richardsprins/discovery-call",
+        path: "https://calendly.com/extensibl-media/discovery-call",
       },
     ],
   },

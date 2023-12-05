@@ -13,11 +13,12 @@ const {title, path, type = "button"} = Astro.props
 .cta-button {
   padding: 1em 1.5em;
   background-color: #7de2d1;
-  color: black;
+  color: #050038;
   position: relative;
   /* border: 2px solid transparent; */
   border-radius: 12px;
   transition: all 0.5s ease;
+  font-weight: 600;
 }
 
 .cta-button::before {
@@ -29,7 +30,7 @@ const {title, path, type = "button"} = Astro.props
   left: 0;
   right: 0;
   bottom: 0;
-  border: 2px solid black;
+  border: 2px solid #050038;
   transform: translate3d(-0.5em, -0.5em, 0);
   border-radius: 12px;
   transition: all 0.3s ease;

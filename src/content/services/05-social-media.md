@@ -18,57 +18,49 @@ headingImage:
   desktop: https://res.cloudinary.com/dpoanqywm/image/upload/v1696618787/diggity-marketing-SB0WARG16HI-unsplash_1_snsseq.jpg
   headline: A professionally managed web presence for your business
 pricing: 
-  - title: Small Business
-    type: recurring
-    price: 200
-    headline: Modern web solutions for small businesses
-    description: No hassle, stress free, and results-driven web design services for small businesses looking to grow their online presence starting at $200 a month
-    includes: 
-      - Unlimited Edits
-      - Hosting Included
-      - Google Analytics Setup
-      - Google Workspace Setup
-      - 24/7 Customer Service
-      - Lifetime Site Updates
-      - 100% Uptime Monitoring
-      - SEO Rich Website
-      - High Converting Funnel
-      - NO Hidded Fees, ever  
-  - title: Enterprise
+  - title: Social Media Marketing
     type: fixed
-    price: 3000
-    headline: High Performance websites for growing businesses
-    description: For medium to large companies that need to build better trust with their customers and reach greater potential with their business
+    price: 0
+    headline: Modern web solutions for small businesses
+    description: Build a loyal online community, drive website traffic, and generate leads, all while maintaining a cohesive brand imag
     includes: 
-      - Highly customized website designed for growth
-      - Custom Business logic to help your customers
-      - 24/7 Customer Service
-      - 100% Uptime Monitoring
-      - SEO Rich Website
-      - High Converting Funnel
-      - NO Hidded Fees, ever  
+      - Enhanced Brand Visibility
+      - Targeted Audience Reach
+      - Increased Engagement
+      - Content Creation
+      - Platform Optimization
+      - Data-Driven Decision Making
+      - Ad Campaign Management
+      - Community Building
+      - Brand Consistency
+      - Improved Website Traffic
+      - Competitive Edge
+      - Ongoing Strategy Optimization
+      - Monthly Reporting
+      - Reputation Management  
+    link: /contact-us
 
 process: 
   title: Our Approach
-  supportingText: We take a strategic and client-centric approach to deliver high-converting websites. Our goal is to create digital experiences that not only look stunning but also drive results. We understand that each project is unique, and therefore, we tailor our approach to meet the specific needs of our clients. Here's how we go about it
+  supportingText: We recognize the power of social media in today's digital landscape. Our approach to social media marketing is built on a deep understanding of your brand, your audience, and the ever-evolving social media platforms. We're committed to harnessing the full potential of social media to help your business thrive.
   image: 
     mobile: https://res.cloudinary.com/dpoanqywm/image/upload/v1697158640/annie-spratt-MChSQHxGZrQ-unsplash_lkbpj2.jpg
     desktop: https://res.cloudinary.com/dpoanqywm/image/upload/v1697158640/annie-spratt-MChSQHxGZrQ-unsplash_1_uttohe.jpg
   steps: 
-    - title: Discovery
-      description: We begin by getting to know your business inside and out. Our team conducts in-depth research and analysis to understand your industry, target audience, and competition. We listen to your goals, vision, and requirements, ensuring we have a comprehensive understanding of what you want to achieve with your website.
-    - title: Strategy
-      description: Once we have a clear understanding of your objectives, we craft a custom strategy. This strategy outlines the design, functionality, and user experience elements that will be essential in achieving your website's conversion goals. Our team collaborates with you to align our strategy with your business objectives.
-    - title: Design
-      description: Our expert designers work their magic to create a visually appealing and user-friendly website. We prioritize responsive design, ensuring your site looks and works perfectly on all devices. During this phase, we focus on creating a design that reflects your brand identity and engages your target audience effectively.
-    - title: Development
-      description: The development phase brings your website to life. Our skilled developers use the latest technologies and coding practices to build a high-performance website. We pay close attention to site speed, security, and functionality, ensuring a seamless user experience.
-    - title: Testing & Optimization
-      description: Before launching your website, we rigorously test it to identify and rectify any issues. We perform usability testing, cross-browser testing, and ensure that all features and functionalities work as intended. Additionally, we optimize your site for search engines (SEO) to enhance its visibility and ranking.
-    - title: Launch
-      description: With your approval, we launch your website to the world. Our team ensures a smooth transition, and we closely monitor the site's performance during this critical phase. We also provide training and support as needed to ensure you are comfortable managing your new digital asset.
-    - title: Post-Launch Support
-      description: Our commitment doesn't end at launch. We offer ongoing support and maintenance to keep your website up to date, secure, and optimized for peak performance. We are here to address any issues, make updates, and help you grow your online presence.
-    - title: Conversion Tracking and Analytics
-      description: We implement robust analytics tools to monitor your website's performance continually. This data-driven approach helps us make informed decisions to enhance user engagement and drive conversions.
+    - title: Comprehensive Strategy
+      description: We start by crafting a customized social media marketing strategy tailored to your unique goals. We work closely with you to understand your brand, target audience, and objectives. Whether it's brand awareness, lead generation, or community building, we create a roadmap to success.
+    - title: Audience Insights
+      description: Understanding your audience is key to effective social media marketing. We conduct thorough research to identify who your audience is, what they care about, and where they hang out online. This data drives content creation and targeting.
+    - title: Content Creation 
+      description: Compelling content is at the heart of social media. Our creative team develops engaging and shareable content that aligns with your brand's voice and resonates with your audience. We use a mix of text, visuals, and multimedia to keep your social media presence vibrant and dynamic.
+    - title: Platform Optimization
+      description: Different social media platforms require different strategies. We optimize your presence on each platform to make the most of its unique features and audience demographics. From Instagram and Facebook to LinkedIn and Twitter, we've got you covered.
+    - title: Community Engagement
+      description: Building and nurturing an online community is essential. We actively engage with your audience, responding to comments, messages, and fostering meaningful conversations. Your followers become loyal advocates for your brand.
+    - title: Ad Campaigns
+      description: We craft and manage targeted ad campaigns to boost your brand's reach and drive specific actions, whether it's website visits, app downloads, or product purchases. Our data-driven approach ensures your ad spend is optimized for the best results.
+    - title: Analytics and Reporting
+      description: Data drives our decisions. We use analytics tools to monitor your social media performance, measure the impact of our strategies, and make data-informed adjustments. We provide you with detailed reports, so you're always informed about your social media ROI.
+    - title: Ongoing Optimization
+      description: Social media is a dynamic landscape. We stay on top of emerging trends, algorithm changes, and audience behaviors to keep your strategy current and effective. We adapt to ensure your social media marketing continues to drive success.
 ---

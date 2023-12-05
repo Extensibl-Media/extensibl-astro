@@ -1,0 +1,58 @@
+---
+import { Image } from "astro:assets";
+import DoubleCheck from "../../assets/double-check.svg"
+---
+
+<section class="py-20 lg:py-36 px-4 bg-brand-dark mt-24">
+  <div class="container mx-auto">
+  <div class="grid grid-cols-8 gap-12">
+    <div class="col-span-8 lg:col-span-4 flex items-center">
+      <img src="https://res.cloudinary.com/dpoanqywm/image/upload/v1701465015/web-development-2974925-2477356_fd1ry1.png" class="w-full"/>
+    </div>
+    <div class="col-span-8 lg:col-span-4 text-brand-background flex flex-col justify-center">
+      <h2 class="text-3xl md:text-4xl lg:text-5xl !leading-tight">Your site for <span class="px-2 bg-brand-primary text-brand-dark rounded-lg leading-none">$0</span> down, <br /><span class="px-2 bg-brand-primary text-brand-dark rounded-lg leading-none">$200 per month*</span></h2>
+      <p class="max-w-xl py-4 text-xl">$0 down for a standard 5 page small business website. If you need more than that, we have options for custom pricing based on the scope of work, number of additional pages, and time involved.</p>
+      <p class="max-w-xl py-4 text-xl">You own your domain, content, listing, and profiles. Cancel anytime with no fees or hassle.</p>
+      <div class="grid grid-cols-2 gap-2 mt-12">
+        <div class="col-span-2 md:col-span-1">
+          <div class="flex items-center gap-2 py-1 px-2 rounded-full text-regular text-brand-background grow-0 w-fit">
+            <Image src={DoubleCheck} alt="Collaborate together icon" class="text-brand-primary h-6 w-6"/>
+            <span>Hosting fees are built right into the monthly payment.</span>
+          </div>
+        </div>
+        <div class="col-span-2 md:col-span-1">
+          <div class="flex items-center gap-2 py-1 px-2 rounded-full text-regular text-brand-background grow-0 w-fit">
+            <Image src={DoubleCheck} alt="Collaborate together icon" class="text-brand-primary h-6 w-6"/>
+            <span>Unlimited Edits on your finished site.</span>
+          </div>
+        </div>
+        <div class="col-span-2 md:col-span-1">
+          <div class="flex items-center gap-2 py-1 px-2 rounded-full text-regular text-brand-background grow-0 w-fit">
+            <Image src={DoubleCheck} alt="Collaborate together icon" class="text-brand-primary h-6 w-6"/>
+            <span>24/7 Technical Support when you need it.</span>
+          </div>
+        </div>
+        <div class="col-span-2 md:col-span-1">
+          <div class="flex items-center gap-2 py-1 px-2 rounded-full text-regular text-brand-background grow-0 w-fit">
+            <Image src={DoubleCheck} alt="Collaborate together icon" class="text-brand-primary h-6 w-6"/>
+            <span>Includes over 40 hours of design, development, and testing.</span>
+          </div>
+        </div>
+        <div class="col-span-2 md:col-span-1">
+          <div class="flex items-center gap-2 py-1 px-2 rounded-full text-regular text-brand-background grow-0 w-fit">
+            <Image src={DoubleCheck} alt="Collaborate together icon" class="text-brand-primary h-6 w-6"/>
+            <span>Achieve a 90+ on Google Page Speed scores and boost your search ranking.</span>
+          </div>
+        </div>
+        <div class="col-span-2 md:col-span-1">
+          <div class="flex items-center gap-2 py-1 px-2 rounded-full text-regular text-brand-background grow-0 w-fit">
+            <Image src={DoubleCheck} alt="Collaborate together icon" class="text-brand-primary h-6 w-6"/>
+            <span>Google Analytics included to monitor your traffic sources</span>
+          </div>
+        </div>
+      </div>
+      <p class="text-sm mt-4">* 12 month minimum contract, then month-to-month</p>
+    </div>
+  </div>
+  <div>
+</section>

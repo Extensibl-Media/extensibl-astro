@@ -6,7 +6,6 @@ interface Props {
 }
 
 const { title } = Astro.props;
-import '@fontsource/prompt';
 ---
 
 <!DOCTYPE html>
@@ -19,7 +18,7 @@ import '@fontsource/prompt';
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <body class="bg-brand-background">
+  <body class="bg-brand-background text-brand-dark">
     <SiteNavbar />
 
     <slot />
@@ -27,6 +26,69 @@ import '@fontsource/prompt';
   </body>
 </html>
 <style is:global>
+@font-face {
+  font-family: 'Geist';
+  src: url('/fonts/Geist-Thin.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Geist';
+  src: url('/fonts/Geist-Light.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Geist';
+  src: url('/fonts/Geist-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Geist';
+  src: url('/fonts/Geist-Medium.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Geist';
+  src: url('/fonts/Geist-SemiBold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Geist';
+  src: url('/fonts/Geist-Bold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Geist';
+  src: url('/fonts/Geist-Black.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Geist';
+  src: url('/fonts/Geist-UltraBlack.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Geist';
+  src: url('/fonts/Geist-UltraLight.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
   html {
     /* font-family: Georgia, "Times New Roman", Times, serif; */
   }
@@ -34,5 +96,9 @@ import '@fontsource/prompt';
     font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
       DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
   }
+  ::selection {
+  background: #7de2d1;
+  } 
 </style>
-<script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="1e81e3b9-f119-40ba-99a8-2008cd5cc724";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+<!-- TODO: Keep this script commented out in dev to avoid unecessary notifications in Crisp -->
+<!-- <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="1e81e3b9-f119-40ba-99a8-2008cd5cc724";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script> -->

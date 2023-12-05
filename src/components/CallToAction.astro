@@ -1,14 +1,13 @@
 ---
 import { Image } from "astro:assets";
 import Handshake from "../assets/handshake-svgrepo-com.svg"
+const {heading, subHeading, buttonText, ctaLink} = Astro.props
 ---
 
 <section class="container mx-auto px-4 py-20">
-  <div class="w-full p-12 rounded-xl bg-brand-primary flex flex-col md:flex-row gap-12 justify-between shadow-md">
-    <div>
-      <h2 class="font-extrabold text-3xl md:text-4xl lg:text-5xl max-w-2xl mb-12">Let's make something together</h2>
-      <button class="px-6 py-3 bg-brand-background rounded-xl">Let's Talk</button>
+    <div class="]w-full px-12 pt-12 rounded-xl bg-brand-dark shadow-md flex flex-col items-center text-brand-background">
+        <h2 class="text-center font-bold text-3xl md:text-4xl lg:text-5xl max-w-2xl mb-8">{heading}</h2>
+        <p class="text-center text-lg md:text-2xl max-w-xl">{subHeading}</p>
+        <a href={ctaLink}><button  class="my-12 px-6 py-3 bg-brand-primary text-brand-dark font-semibold rounded-xl">{buttonText}</button></a>
     </div>
-    <Image src={Handshake} alt="Collaborate together icon" class="h-56 w-56 mx-auto"/>
-  </div>
 </section>

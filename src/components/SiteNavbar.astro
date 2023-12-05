@@ -4,17 +4,18 @@ import { NavMap } from "../utils/NavMap";
 import Dropdown from "../components/Elements/Dropdown.astro";
 import BrandButton from "./Elements/BrandButton.astro";
 import { Image } from "astro:assets";
-import logo from "../assets/logo.png"
+import logo from "../assets/extensibl-logo.svg"
 ---
 
-<header class="px-4 py-8">
+<header class="px-4 py-6 relative z-20">
   <nav
     class="flex flex-col lg:flex-row justify-between items-center container mx-auto"
   >
     <Astronav>
       <div class="flex w-full lg:w-auto items-center justify-between">
-        <a href="/" class="text-2xl"
-          ><Image src={logo} alt="Extensibl Media Logo" class="w-36"/>
+        <a href="/" class="text-2xl flex items-center gap-2"
+          ><Image src={logo} alt="Extensibl Media Logo" class="w-12"/>
+          <span class="font-black leading-none">EXTENSIBL <br/> MEDIA</span>
         </a>
         <div class="block lg:hidden">
           <MenuIcon class="w-4 h-4 text-gray-800" />
@@ -52,7 +53,7 @@ import logo from "../assets/logo.png"
             NavMap.cta.secondary && (
               <a
                 href={NavMap.cta.secondary.path}
-                class="text-center px-4 py-2 bg-gray-100"
+                class="text-center px-4 py-2 bg-brand-background border-2 border-brand-dark text-brand-dark rounded-lg"
               >
                 {NavMap.cta.secondary.title}
               </a>
@@ -60,7 +61,7 @@ import logo from "../assets/logo.png"
           }
           <a
             href={NavMap.cta.primary.path}
-            class="text-center px-4 py-2 bg-black text-white"
+            class="text-center px-4 py-2 bg-brand-primary border-2 border-brand-primary text-brand-dark rounded-lg"
             >{NavMap.cta.primary.title}</a
           >
         </div>

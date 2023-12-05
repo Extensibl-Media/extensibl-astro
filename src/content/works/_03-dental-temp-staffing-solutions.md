@@ -2,7 +2,7 @@
 title: Dental Temp Staffing Solutions
 headline: Empowering Workforce Management
 releaseDate: 1697221983
-category: software-development
+category: Web Design
 client: Dental Temp Staffing Solutions
 url: https://www.dtstaffingsolutions.com
 images: 

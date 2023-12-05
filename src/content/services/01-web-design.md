@@ -34,7 +34,8 @@ pricing:
       - SEO Rich Website
       - High Converting Funnel
       - NO Hidded Fees, ever  
-  - title: Enterprise
+    link: /contact-us
+  - title: Business+
     type: fixed
     price: 3000
     headline: High Performance websites for growing businesses
@@ -47,6 +48,7 @@ pricing:
       - SEO Rich Website
       - High Converting Funnel
       - NO Hidded Fees, ever  
+    link: /contact-us
 
 process: 
   title: Our Approach

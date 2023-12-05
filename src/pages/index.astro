@@ -6,13 +6,24 @@ import Layout from "../layouts/Layout.astro";
 import TestimonialsSection from "../components/Homepage/TestimonialsSection.astro";
 import CallToAction from "../components/CallToAction.astro"
 import ProcessSection from "../components/Homepage/ProcessSection.astro";
+import BentoSection from "../components/Homepage/BentoGrid.astro"
+import TechStack from "../components/Homepage/TechStackSection.astro"
+import PortfolioSection from "../components/Homepage/PortfolioGridSection.astro"
+
+import {getCollection} from "astro:content"
+import BrandButton from "../components/Elements/BrandButton.astro";
+
+const allWorks = await getCollection('works')
+const recentWorks = allWorks.slice(0, 6)
 ---
 
 <Layout title="Digital Agency - Extensibl Media">
 	<HeroSection/>
 	<ShortBioSection />
 	<ProcessSection />
-	<ServicesSection />
-	<CallToAction />
+  <BentoSection />
+  <TechStack />
+  <PortfolioSection recentWorks={recentWorks}/>
+	<CallToAction heading="Scale your team without the extra overhead" subHeading="Build your dream team with our scalable workforce subscription today." buttonText="Book A Call Today" ctaLink="/book-a-call"/>
 	<TestimonialsSection />
 </Layout>

@@ -1,5 +1,16 @@
 import { z, defineCollection, reference } from "astro:content";
 
+const scopeCollection = defineCollection({
+  type: "data",
+  schema: z.object({
+    turnaround: z.string(),
+    title: z.string(),
+    description: z.string(),
+    category: z.string(),
+    platforms: z.array(z.string()),
+  }),
+});
+
 const serviceCollection = defineCollection({
   type: "content",
   schema: z.object({
@@ -23,6 +34,7 @@ const serviceCollection = defineCollection({
         headline: z.string(),
         description: z.string(),
         includes: z.array(z.string()),
+        link: z.string(),
       })
     ),
     process: z.object({
@@ -108,7 +120,8 @@ export const collections = {
   services: serviceCollection,
   articles: blogCollection,
   authors: authorsCollection,
+  works: portfolioCollection,
+  scopes: scopeCollection,
   // tags: tagsCollection,
   // categories: categoryCollection,
-  works: portfolioCollection,
 };

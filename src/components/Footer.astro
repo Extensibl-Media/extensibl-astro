@@ -1,6 +1,6 @@
 ---
 import { Image } from "astro:assets";
-import logo from "../assets/logo.png"
+import logo from "../assets/extensibl-logo.svg"
 import { NavMap } from "../utils/NavMap";
 ---
 
@@ -15,11 +15,14 @@ import { NavMap } from "../utils/NavMap";
   <div class="container mx-auto px-4 pt-12">
     <div class="grid grid-cols-6 h-full mb-4 pb-8">
       <div class="col-span-6 md:col-span-6 lg:col-span-3 mb-4 lg:pr-20">
-        <Image src={logo} alt="Extensibl Media Logo" class="w-36 mb-4"/>
+        <a href="/" class="text-2xl flex items-center gap-2 mb-4"
+          ><Image src={logo} alt="Extensibl Media Logo" class="w-12"/>
+          <span class="font-black leading-none">EXTENSIBL <br/> MEDIA</span>
+        </a>
         <p class="text-md font-semibold">Subscribe to our Newsletter</p>
         <p class="text-sm">Join our newsletter to stay up to date on new updates and news!</p>
         <form
-        name="newsletter"
+          name="newsletter"
           method="POST"
           netlify-honeypot="bot-field"
           netlify
@@ -54,7 +57,7 @@ import { NavMap } from "../utils/NavMap";
     <div class="border-t border-t-black flex flex-col md:flex-row gap-4 justify-between py-8 text-sm">
       <p>© Extensibl Media 2023 All Rights Reserved</p>     
       <div class="flex gap-4">
-        <span>Terms & Conditions</span>
+        <a href="/terms-conditions">Terms & Conditions</a>
         <span>Privacy Policy</span>
       </div>
     </div>

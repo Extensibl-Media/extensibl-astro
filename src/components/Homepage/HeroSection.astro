@@ -1,29 +1,55 @@
 ---
 import BrandButton from "../Elements/BrandButton.astro";
-import Blob from "../Elements/Blob.astro";
+import BrandButtonAlt from "../Elements/BrandButtonAlt.astro";
+import TurquoiseBlob from "../Elements/TurquoiseBlob.astro";
+import { Image } from "astro:assets";
+import DoubleCheck from "../../assets/double-check.svg"
 ---
 
-<section
-  class="min-h-screen lg:pt-20 flex flex-col gap-8 items-center container mx-auto md:text-center px-4 pt-0 relative"
->
-<Blob />
-  <h1 class="text-4xl md:text-6xl lg:text-8xl font-extrabold z-10">
-     We are a Digital Agency designed to Accelerate Business Growth
-  </h1>
+<section class="lg:pt-20 flex flex-col gap-8 items-center px-4 pt-0 overflow-x-hidden overflow-y-auto">
+<div class="relative container mx-auto">
+<!-- <TurquoiseBlob /> -->
+  <div class="grid grid-cols-2 w-full z-10">
+    <div class="col-span-2 md:col-span-1 md:pt-12">
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold z-10 !leading-tight">
+        Your Dedicated <span class="px-2 bg-brand-primary rounded-lg leading-none">Design & Dev</span> Team Is Just A Click Away
+    </h1>
 
-  <div class="flex flex-col md:flex-row gap-8 w-full md:items-center justify-around z-10">
-    <div>
-      <p>Established in</p>
-      <p class="text-2xl font-semibold text-left">2019</p>
+    <div class="flex flex-col gap-8 w-full justify-around z-10">
+
+      <p class="my-4 text-xl font-light max-w-lg">
+
+        Save up to 80% on employee costs by tapping into our team of talented developers, designers, and project managers to scale your business
+      </p>
+      <div class="flex flex-col md:flex-row gap-2 md:gap-4 md:items-center">
+        <div class="flex items-center gap-2 py-1 px-2 rounded-full text-sm"><Image src={DoubleCheck} alt="Collaborate together icon" class="h-6 w-6"/> <span>Unlimited requests</span></div>
+        <div class="flex items-center gap-2 py-1 px-2 rounded-full text-sm"><Image src={DoubleCheck} alt="Collaborate together icon" class="h-6 w-6"/> <span>Flat Monthly Rate</span></div>
+        <div class="flex items-center gap-2 py-1 px-2 rounded-full text-sm"><Image src={DoubleCheck} alt="Collaborate together icon" class="h-6 w-6"/> <span>No Contracts, Ever</span></div>
+      </div>
+      <div class="flex gap-8">
+      <BrandButton title="Get Started" path="#"  />
+      <BrandButtonAlt title="See Our Work" path="#"  /> 
+      </div>
+
     </div>
-    <p class="my-4 max-w-sm text-left">
-      We offer a suite of services for businesses and startups that focus on growth and innovation for your business
-    </p>
-    <!-- <a href="#" class="text-center px-6 py-3 bg-brand-primary rounded-xl">Learn More</a> -->
-    <BrandButton title="Learn More" path="#"  />
-
+    </div>
+    <div class="col-span-2 md:col-span-1 relative">
+      <img class="absolute top-12 left-12 w-32 md:w-40 xl:w-56" src="https://res.cloudinary.com/dpoanqywm/image/upload/v1701371761/Untitled_design_jg437i.png"/>
+      <picture class="w-full z-10">
+        <source
+          srcset="https://res.cloudinary.com/dpoanqywm/image/upload/v1701371754/Untitled_design_2_m2rslu.png"
+        />
+        <img
+          loading="lazy"
+          decoding="async"
+          alt=""
+          class="mt-12  md:mt-0 md:w-3/4 rounded-xl ml-auto"
+          src="https://res.cloudinary.com/dpoanqywm/image/upload/v1701371754/Untitled_design_2_m2rslu.png"
+        />
+      </picture>
+    </div>
   </div>
-  <picture class="w-full z-10">
+  <!-- <picture class="w-full z-10">
     <source
       media="(max-width: 600px)"
       srcset="https://res.cloudinary.com/dpoanqywm/image/upload/v1696528398/marvin-meyer-SYTO3xs06fU-unsplash_1_sguypl.jpg"
@@ -39,5 +65,6 @@ import Blob from "../Elements/Blob.astro";
       class="w-full rounded-xl"
       src="https://res.cloudinary.com/dpoanqywm/image/upload/v1696528398/marvin-meyer-SYTO3xs06fU-unsplash_rx22iv.jpg"
     />
-  </picture>
+  </picture> -->
+</div>
 </section>

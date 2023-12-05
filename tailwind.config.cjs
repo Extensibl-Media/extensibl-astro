@@ -6,12 +6,14 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Prompt", ...defaultTheme.fontFamily.sans],
+        sans: ["Geist", ...defaultTheme.fontFamily.sans],
       },
       colors: {
         brand: {
           primary: "#7de2d1",
           background: "#fffafb",
+          pink: "#ed47bb",
+          dark: "#050038",
         },
       },
     },

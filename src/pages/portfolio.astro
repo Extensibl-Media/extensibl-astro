@@ -1,8 +1,8 @@
 ---
 import {getCollection} from "astro:content"
-import Layout from "../../layouts/Layout.astro";
-import TestimonialsSection from "../../components/Homepage/TestimonialsSection.astro";
-import CallToAction from "../../components/CallToAction.astro";
+import Layout from "../layouts/Layout.astro";
+import TestimonialsSection from "../components/Homepage/TestimonialsSection.astro";
+import CallToAction from "../components/CallToAction.astro";
 import { Image } from "astro:assets";
 
 const allWorks = await getCollection('works')
@@ -16,12 +16,12 @@ console.log(allWorks)
     </h1>
     <div class="grid grid-cols-6 gap-8 mt-12 lg:mt-20">
       {allWorks.map((work: any) => (
-        <a href={`/work/${work.slug}`} class="col-span-6 md:col-span-3 lg:col-span-2 w-full aspect-square shadow-md rounded-xl">
+        <a href={work.data.url} target="_blank" rel="noopener noreferrer" class="col-span-6 md:col-span-3 lg:col-span-2 w-full aspect-square shadow-md rounded-xl">
           <div class="relative w-full h-full work-card">
               <img src={work.data.images.thumbnail} class="rounded-xl"/>
               <div class="work-details p-8 flex flex-col">
-                <p class="text-3xl font-semibold">{work.data.headline}</p>
-                <p class="text-xl font-semibold">{work.data.client}</p>
+                <p class="text-3xl font-semibold">{work.data.client}</p>
+                <p class="text-xl font-semibold">{work.data.category}</p>
                 <div class="mt-auto w-20 h-20 rounded-full bg-white flex items-center justify-center text-2xl">➥</div>
               </div>
           </div>
@@ -29,7 +29,7 @@ console.log(allWorks)
       ))}
     </div>
   </section>
-  <CallToAction />
+	<CallToAction heading="Scale your team without the extra overhead" subHeading="Build your dream team with our scalable workforce subscription today." buttonText="Book A Call Today" ctaLink="/book-a-call"/>
   <TestimonialsSection />
 </Layout>
 

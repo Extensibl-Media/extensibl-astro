@@ -18,35 +18,74 @@ headingImage:
   desktop: https://res.cloudinary.com/dpoanqywm/image/upload/v1696618787/tran-mau-tri-tam-QwAL909kTiY-unsplash_1_jics9p.jpg
   headline: A professionally managed web presence for your business
 pricing: 
-  - title: Small Business
+  - title: Website + No Code App Development 
     type: recurring
-    price: 200
-    headline: Modern web solutions for small businesses
-    description: No hassle, stress free, and results-driven web design services for small businesses looking to grow their online presence starting at $200 a month
+    price: 2999
+    headline: Website & No-Code Application Development
+    description: For Startups looking to buid their digital presence and begin validating ideas and building their audience, using existing designs.
     includes: 
-      - Unlimited Edits
-      - Hosting Included
-      - Google Analytics Setup
-      - Google Workspace Setup
+      - Unlimited Requests
+      - Unlimited Revisions
+      - Unlimited Projects
+      - Fast Turnaround
       - 24/7 Customer Service
-      - Lifetime Site Updates
-      - 100% Uptime Monitoring
-      - SEO Rich Website
-      - High Converting Funnel
+      - Access to Slack Support
+      - Access to Client Portal
+      - Conversion Focused Website
+      - No Code Application Development
       - NO Hidded Fees, ever  
-  - title: Enterprise
-    type: fixed
-    price: 3000
-    headline: High Performance websites for growing businesses
-    description: For medium to large companies that need to build better trust with their customers and reach greater potential with their business
+    link: https://extensiblmedia.manyrequests.io/register
+  - title: Website + Design + No Code App Development 
+    type: recurring
+    price: 5000
+    headline: Website & No-Code Application Development + Design
+    description: For Startups looking to buid their digital presence and begin validating ideas and building their audience, including brand and product design services.
     includes: 
-      - Highly customized website designed for growth
-      - Custom Business logic to help your customers
+      - Unlimited Requests
+      - Unlimited Revisions
+      - Unlimited Projects
+      - Fast Turnaround
       - 24/7 Customer Service
-      - 100% Uptime Monitoring
-      - SEO Rich Website
-      - High Converting Funnel
+      - Access to Slack Support
+      - Access to Client Portal
+      - Conversion Focused Website
+      - UI/UX Design Included
+      - No Code Application Development
       - NO Hidded Fees, ever  
+    link: https://extensiblmedia.manyrequests.io/register
+  - title: Design to React Code
+    type: recurring
+    price: 3500
+    headline: Ready to use components built from your designs
+    description: Production ready and well tested React components ready to drop into your project, extend your front end development capabilities with one of our highly skilled developers.
+    includes: 
+      - Unlimited Requests
+      - Unlimited Revisions
+      - Unlimited Projects
+      - Fast Turnaround
+      - 24/7 Customer Service
+      - Access to Slack Support
+      - Access to Client Portal
+      - Production ready React components built from your designs
+      - NO Hidded Fees, ever  
+    link: https://extensiblmedia.manyrequests.io/register
+  - title: Full Stack Application Development
+    type: recurring
+    price: 5000
+    headline: MVP Application development and beyond
+    description: For startups looking to move beyond early development and validation, into production and ship their app to their users.
+    includes: 
+      - Unlimited Requests
+      - Unlimited Revisions
+      - Unlimited Projects
+      - Fast Turnaround
+      - 24/7 Customer Service
+      - Access to Slack Support
+      - Access to Client Portal
+      - Conversion Focused Website
+      - No Code Application Development
+      - NO Hidded Fees, ever  
+    link: https://extensiblmedia.manyrequests.io/register
 
 process: 
   title: Benefits of becoming a member
@@ -56,15 +95,15 @@ process:
     desktop: https://res.cloudinary.com/dpoanqywm/image/upload/v1697158640/annie-spratt-MChSQHxGZrQ-unsplash_1_uttohe.jpg
   steps: 
     - title: Unlimited Revisions
-      description: We offer unlimited development and design services. Submit as many tasks as you need and we will handle them all, one by one from the queue.
+      description: We offer unlimited development and design services. Submit as many tasks as you need and we will handle them all, one by one from the queue. All packages include unlimite requests and revisions, so we keep working until we deliver the perfect results.
     - title: Predictable Pricing
-      description: We value transparency when it comes to paying for services. That's why we offer pricing that is always transparent for all of our customers.
+      description: We value transparency when it comes to paying for services. That's why we offer pricing that is always transparent for all of our customers. For less than half the price of hiring a flaky freelancer or senior designer or developer, you gain access to a dedicated designer or developer that works as a part of your own team.
     - title: No Strings Attached
-      description: We won't bother you with complicated contracts, hidden fees or any nasty surprises. Just a flexible plan that covers all your needs.
+      description: We won't bother you with complicated contracts, hidden fees or any nasty surprises. Just a flexible plan that covers all your needs. Upgrade, downgrade, or cancel any time, no strings attached.
     - title: Professional Quality
-      description: We are a team of experienced developers and designers. Leave stress out of the equation and get nothing but the best for your business.
+      description: We are a team of experienced developers and designers. Leave stress out of the equation and get nothing but the best for your business. We never stop until you are 100% satisfied with our results.
     - title: Fast Turnaround
-      description: Don't lose time searching for an agency or a freelancer. Skip the unneeded back-and-forth and get your requests completed much faster instead.
+      description: Don't lose time searching for an agency or a freelancer. Skip the unneeded back-and-forth and get your requests completed much faster instead. Our customer portal is built with you in mind, and it's simplicity in creating requests and providing feedback helps propel our process forward. We are a part of your team, and will stop at nothing to deliver quality results.
     - title: Scalability
-      description: Scale up or down depending on your needs. You won't get that from a traditional agency or a full time hire.
+      description: Scale up or down depending on your needs. You won't get that from a traditional agency or a full time hire. We offer a wide range of packages from website design and development to complete software development for your next app idea or MVP. We scale to fit the current state of your growth and stage of your business.
 ---

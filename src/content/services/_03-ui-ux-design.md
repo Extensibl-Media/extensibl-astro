@@ -34,19 +34,7 @@ pricing:
       - SEO Rich Website
       - High Converting Funnel
       - NO Hidded Fees, ever  
-  - title: Enterprise
-    type: fixed
-    price: 3000
-    headline: High Performance websites for growing businesses
-    description: For medium to large companies that need to build better trust with their customers and reach greater potential with their business
-    includes: 
-      - Highly customized website designed for growth
-      - Custom Business logic to help your customers
-      - 24/7 Customer Service
-      - 100% Uptime Monitoring
-      - SEO Rich Website
-      - High Converting Funnel
-      - NO Hidded Fees, ever  
+    link: ""
 
 process: 
   title: Our Approach

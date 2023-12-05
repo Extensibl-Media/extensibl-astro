@@ -1,0 +1,68 @@
+---
+import BrandButton from "../../components/Elements/BrandButton.astro";
+import BrandButtonAlt from "../../components/Elements/BrandButtonAlt.astro";
+import TurquoiseBlob from "../../components/Elements/TurquoiseBlob.astro";
+import { Image } from "astro:assets";
+import DoubleCheck from "../../assets/double-check.svg"
+---
+
+<section class="lg:pt-20 flex flex-col gap-8 items-center px-4 pt-0 overflow-x-hidden overflow-y-auto">
+  <div class="relative container mx-auto">
+  <!-- <TurquoiseBlob /> -->
+    <div class="grid grid-cols-2 w-full z-10">
+      <div class="col-span-2 md:col-span-1">
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold z-10 !leading-tight">
+          Modern Web Solutions For <span class="px-2 bg-brand-primary rounded-lg leading-none">Small Business</span> 
+      </h1>
+  
+      <div class="flex flex-col gap-8 w-full justify-around z-10">
+  
+        <p class="my-4 text-xl font-light max-w-lg">
+          No hassle, stress free, and results driven web design services for local businesses looking to grow their online presence, starting at $200 per month
+        </p>
+        <div class="flex flex-col md:flex-row gap-2 md:gap-4 md:items-center">
+          <div class="flex items-center gap-2 py-1 px-2 rounded-full text-sm"><Image src={DoubleCheck} alt="Collaborate together icon" class="h-6 w-6"/> <span>Custom Code, NO Site Builders</span></div>
+          <div class="flex items-center gap-2 py-1 px-2 rounded-full text-sm"><Image src={DoubleCheck} alt="Collaborate together icon" class="h-6 w-6"/> <span>Hosting Included</span></div>
+          <div class="flex items-center gap-2 py-1 px-2 rounded-full text-sm"><Image src={DoubleCheck} alt="Collaborate together icon" class="h-6 w-6"/> <span>Unlimited Edits</span></div>
+        </div>
+        <div class="flex gap-8">
+        <BrandButton title="Get Started" path="#"  />
+        <BrandButtonAlt title="Learn More" path="#"  /> 
+        </div>
+  
+      </div>
+      </div>
+      <div class="col-span-2 md:col-span-1 relative">
+        <picture class="w-full z-10">
+          <source
+            srcset="https://res.cloudinary.com/dpoanqywm/image/upload/v1701465015/1-2-responsive-web-design-png-image_q0ux7z.png"
+          />
+          <img
+            loading="lazy"
+            decoding="async"
+            alt=""
+            class="mt-12  md:mt-0 rounded-xl ml-auto"
+            src="https://res.cloudinary.com/dpoanqywm/image/upload/v1701465015/1-2-responsive-web-design-png-image_q0ux7z.png"
+          />
+        </picture>
+      </div>
+    </div>
+    <!-- <picture class="w-full z-10">
+      <source
+        media="(max-width: 600px)"
+        srcset="https://res.cloudinary.com/dpoanqywm/image/upload/v1696528398/marvin-meyer-SYTO3xs06fU-unsplash_1_sguypl.jpg"
+      />
+      <source
+        media="(min-width: 601px)"
+        srcset="https://res.cloudinary.com/dpoanqywm/image/upload/v1696528398/marvin-meyer-SYTO3xs06fU-unsplash_rx22iv.jpg"
+      />
+      <img
+        loading="lazy"
+        decoding="async"
+        alt=""
+        class="w-full rounded-xl"
+        src="https://res.cloudinary.com/dpoanqywm/image/upload/v1696528398/marvin-meyer-SYTO3xs06fU-unsplash_rx22iv.jpg"
+      />
+    </picture> -->
+  </div>
+  </section>
