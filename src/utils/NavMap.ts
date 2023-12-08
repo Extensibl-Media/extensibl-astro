@@ -77,8 +77,8 @@ export const NavMap: {
     ],
     contact: [
       {
-        title: "extensiblmedia@gmail.com",
-        path: "mailto:extensiblmedia@gmail.com",
+        title: "hello@extensiblmedia.com",
+        path: "mailto:hello@extensiblmedia.com",
       },
       { title: "+1 (208) 696-1474", path: "tel:+12086961474" },
       {
