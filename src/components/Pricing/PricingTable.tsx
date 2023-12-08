@@ -28,7 +28,7 @@ const PricingTable = () => {
 
   return (
     <div className="mt-12 border-2 border-brand-dark rounded-lg">
-      <div className="border-b-2 border-brand-dark p-4 flex flex-col items-start">
+      <div className="border-b-2 border-brand-dark p-4 flex flex-col items-start bg-white rounded-t-lg">
         <p className="text-xl md:text-3xl font-bold">All Inclusive</p>
         <p className="text-sm md:text-lg mt-4 text-gray-400 font-semibold uppercase max-w-4xl">
           For fast-moving agencies, marketing teams & startups who need access
