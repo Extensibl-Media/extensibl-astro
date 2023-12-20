@@ -3,13 +3,11 @@ import {getCollection} from "astro:content"
 import Layout from "../layouts/Layout.astro";
 import TestimonialsSection from "../components/Homepage/TestimonialsSection.astro";
 import CallToAction from "../components/CallToAction.astro";
-import { Image } from "astro:assets";
 
 const allWorks = await getCollection('works')
-console.log(allWorks)
 ---
 
-<Layout title="Our Team Talent - Extensibl Media">
+<Layout title="Our Recent Work - Extensibl Media" description="See some of the great work we dow for our amazing clients!">
   <section class="container mx-auto pt-0 lg:pt-20 py-20 lg:gap-16 px-4">
     <h1 class="lg:text-center text-4xl md:text-5xl lg:text-6xl font-extrabold">
       Recent Work
@@ -29,7 +27,7 @@ console.log(allWorks)
       ))}
     </div>
   </section>
-	<CallToAction heading="Scale your team without the extra overhead" subHeading="Build your dream team with our scalable workforce subscription today." buttonText="Book A Call Today" ctaLink="https://calendly.com/extensibl-media/discovery-call"/>
+	<CallToAction heading="Build your business on the modern web" subHeading="Book a call today to see how we can help your business succeed online." buttonText="Book A Call Today" ctaLink="https://calendly.com/extensibl-media/discovery-call"/>
   <TestimonialsSection />
 </Layout>
 

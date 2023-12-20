@@ -1,0 +1,30 @@
+---
+import HeroSection from "../components/Homepage/HeroSection.astro";
+import ShortBioSection from "../components/Homepage/ShortBioSection.astro";
+import ServicesSection from '../components/Homepage/ServicesSection.astro'
+import Layout from "../layouts/Layout.astro";
+import TestimonialsSection from "../components/Homepage/TestimonialsSection.astro";
+import CallToAction from "../components/CallToAction.astro"
+import ProcessSection from "../components/Homepage/ProcessSection.astro";
+import BentoSection from "../components/Homepage/BentoGrid.astro"
+import TechStack from "../components/Homepage/TechStackSection.astro"
+import PortfolioSection from "../components/Homepage/PortfolioGridSection.astro"
+
+import {getCollection} from "astro:content"
+import PricingTableSection from "../components/Pricing/PricingTableSection.astro";
+
+const allWorks = await getCollection('works')
+const recentWorks = allWorks.slice(0, 6)
+---
+
+<Layout title="Design And Dev Subscriptions for Agencies & Startups - Extensibl Media" description="Scale your agency or startup production team instantly with our white label services for agencies and startups.">
+	<HeroSection/>
+	<ShortBioSection />
+	<ProcessSection />
+  <BentoSection />
+  <TechStack />
+  <PortfolioSection recentWorks={recentWorks}/>
+	<PricingTableSection />
+	<CallToAction heading="Scale your team without the extra overhead" subHeading="Build your dream team with our scalable workforce subscription today." buttonText="Book A Call Today" ctaLink="https://calendly.com/extensibl-media/discovery-call"/>
+	<TestimonialsSection />
+</Layout>

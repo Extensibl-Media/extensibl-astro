@@ -18,22 +18,26 @@ export const NavMap: {
   >;
 } = {
   links: [
+    // {
+    //   title: "About",
+    //   path: "/about",
+    // },
+    {
+      title: "Services",
+      path: "#services",
+    },
     {
       title: "Pricing",
-      path: "/pricing",
+      path: "#pricing",
     },
     {
       title: "Our Work",
       path: "/portfolio",
     },
     // {
-    //   title: "Our Experts",
-    //   path: "/who-we-are",
+    //   title: "Join Our Team",
+    //   path: "https://extensiblmedia.typeform.com/to/wyYIeQcy",
     // },
-    {
-      title: "Join Our Team",
-      path: "https://extensiblmedia.typeform.com/to/wyYIeQcy",
-    },
   ],
   cta: {
     primary: {
@@ -42,19 +46,11 @@ export const NavMap: {
     },
   },
   footer: {
-    "Quick Links": [
-      { title: "Pricing", path: "/pricing" },
-      // {
-      //   title: "Scope Of Work",
-      //   path: "/scope",
-      // },
+    Services: [
+      { title: "Web Design", path: "/" },
       {
-        title: "Our Work",
-        path: "/portfolio",
-      },
-      {
-        title: "Join the Team",
-        path: "https://extensiblmedia.typeform.com/to/wyYIeQcy",
+        title: "Design & Development Subscriptions",
+        path: "/white-label",
       },
     ],
     resources: [
@@ -63,17 +59,9 @@ export const NavMap: {
         path: "/blog",
       },
       {
-        title: "Guides",
-        path: "/guides",
-      },
-      {
         title: "Products",
         path: "/products",
       },
-      // {
-      //   title: "FAQ",
-      //   path: "/faq",
-      // },
     ],
     contact: [
       {
