@@ -10,7 +10,7 @@ exports.handler = async function (event, context) {
   try {
     const { email, firstName } = JSON.parse(event.body);
 
-    await fetch(
+    const response = await fetch(
       `https://api.convertkit.com/v3/forms/${CK_AUDIT_FORM_ID}/subscribe`,
       {
         method: "POST",
@@ -23,7 +23,7 @@ exports.handler = async function (event, context) {
         }),
       }
     );
-
+    console.log(response);
     return {
       statusCode: 200,
       body: JSON.stringify({ success: true }),
