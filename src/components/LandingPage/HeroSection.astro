@@ -115,7 +115,7 @@ import DoubleCheck from "../../assets/double-check.svg"
       const email = await formData!.get("email");
 
       try {
-        await fetch("/api/siteAuditSubmission", {method: "POST", body: JSON.stringify({firstName, email})})
+        await fetch("https://www.extensiblmedia.com/api/siteAuditSubmission", {method: "POST", body: JSON.stringify({firstName, email})})
       } catch (error) {
         console.log(error)
       }
