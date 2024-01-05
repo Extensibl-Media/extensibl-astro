@@ -4,7 +4,7 @@ headline: Empowering Local Business with Custom Tech
 releaseDate: 1697221983
 category: Software Development
 client: Luke Mori Real Estate
-url: https://www.pumpthq.com
+url: https://www.lukemori.com
 images: 
   thumbnail: https://res.cloudinary.com/dpoanqywm/image/upload/v1704493903/Untitled_design_900x900_ryayjm.jpg
 
