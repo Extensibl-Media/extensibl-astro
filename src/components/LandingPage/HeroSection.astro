@@ -1,21 +1,20 @@
 ---
 import BrandButton from "../../components/Elements/BrandButton.astro";
 import BrandButtonAlt from "../../components/Elements/BrandButtonAlt.astro";
-import TurquoiseBlob from "../../components/Elements/TurquoiseBlob.astro";
 import { Image } from "astro:assets";
 import DoubleCheck from "../../assets/double-check.svg"
 ---
 
-<section class="lg:pt-20 flex flex-col gap-8 items-center px-4 pt-0 overflow-x-hidden overflow-y-auto">
+<section class="lg:pt-20 pb-20 flex flex-col gap-8 items-center px-4 pt-0 overflow-x-hidden overflow-y-auto">
   <div class="relative container mx-auto">
   <!-- <TurquoiseBlob /> -->
     <div class="grid grid-cols-2 w-full z-10">
-      <div class="col-span-2 md:col-span-1">
+      <div class="col-span-2 lg:col-span-1">
         <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold z-10 !leading-tight">
-          Modern Web Solutions For <span class="px-2 bg-brand-primary rounded-lg leading-none">Small Business</span> 
-      </h1>
+          We craft <span class="px-2 bg-brand-primary rounded-lg leading-none whitespace-nowrap">High Converting</span> Websites for Local Businesses
+        </h1>
   
-      <div class="flex flex-col gap-8 w-full justify-around z-10">
+        <div class="flex flex-col gap-8 w-full justify-around z-10">
   
         <p class="my-4 text-xl font-light max-w-lg">
           No hassle, stress free, and results driven web design services for local businesses looking to grow their online presence, starting at $200 per month
@@ -32,8 +31,8 @@ import DoubleCheck from "../../assets/double-check.svg"
   
       </div>
       </div>
-      <div class="col-span-2 md:col-span-1 relative">
-        <picture class="w-full z-10">
+      <div class="col-span-2 lg:col-span-1 relative">
+        <!-- <picture class="w-full z-10">
           <source
             srcset="https://res.cloudinary.com/dpoanqywm/image/upload/v1701465015/1-2-responsive-web-design-png-image_q0ux7z.png"
           />
@@ -44,8 +43,49 @@ import DoubleCheck from "../../assets/double-check.svg"
             class="mt-12  md:mt-0 rounded-xl ml-auto"
             src="https://res.cloudinary.com/dpoanqywm/image/upload/v1701465015/1-2-responsive-web-design-png-image_q0ux7z.png"
           />
-        </picture>
-      </div>
+        </picture> -->
+        <form 
+          name="audit-form"
+          method="POST"
+          netlify-honeypot="bot-field"
+          netlify
+          data-netlify="true"
+          id="audit-form"
+        >
+          <div class="mt-12 lg:mt-0 bg-brand-dark p-6 rounded-lg lg:max-w-[500px] mx-auto">
+            <p class="font-bold text-2xl text-brand-background">Get a FREE website audit</p>
+            <p class="mb-4 text-brand-background">Want to see how your website is performing for your business? Sign up and book a call today!</p>
+            <div class="grid grid-cols-2 gap-x-4">
+              <div class="col-span-2 sm:col-span-1">
+                <label for="first-name" class="text-brand-background">
+                  First Name
+                </label>
+                  <input placeholder="First Name" type="text" name="first-name" class="p-2 border border-gray-400 mb-4 w-full rounded-md"/>    
+              </div>
+              <div class="col-span-2 sm:col-span-1">
+                <label for="last-name" class="text-brand-background">
+                  Last Name
+                </label>
+                  <input placeholder="Last Name" type="text" name="last-name" class="p-2 border border-gray-400 mb-4 w-full rounded-md"/>    
+              </div>
+            </div>
+            <label for="email" class="text-brand-background">
+              Email Address
+            </label>
+              <input placeholder="Email Address" type="email" name="email" class="p-2 border border-gray-400 mb-4 w-full rounded-md"/>
+            <label for="business" class="text-brand-background">
+              Website URL
+            </label>
+            <input placeholder="Website URL" type="text" name="website-url" class="p-2 border border-gray-400 mb-8 w-full rounded-md"/>
+            <p class="hidden">
+              <label>
+                Don’t fill this out if you’re human: <input name="bot-field" />
+              </label>
+            </p>
+            <button id="audit-submit" class="rounded-md px-4 py-2 bg-brand-primary font-semibold">Book a Call Today</button>
+          </div>
+        </form>
+      </form>
     </div>
     <!-- <picture class="w-full z-10">
       <source
@@ -66,3 +106,21 @@ import DoubleCheck from "../../assets/double-check.svg"
     </picture> -->
   </div>
   </section>
+
+  <script>
+    async function handleSubmit(event: SubmitEvent){
+      const form: HTMLFormElement | null = document.querySelector("#audit-form");
+      const formData = form && new FormData(form);
+      const firstName = await formData!.get("first-name");
+      const email = await formData!.get("email");
+
+      try {
+        await fetch("http://localhost:8888/api/siteAuditSubmission", {method: "POST", body: JSON.stringify({firstName, email})})
+      } catch (error) {
+        console.log(error)
+      }
+    }
+
+    const auditForm: HTMLFormElement | null = document.querySelector("#audit-form")
+    auditForm!.onsubmit = handleSubmit
+  </script>
