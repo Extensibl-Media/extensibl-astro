@@ -16,7 +16,7 @@
     "@fontsource/prompt": "^5.0.9",
     "@types/react": "^18.2.39",
     "@types/react-dom": "^18.2.17",
-    "astro": "^3.2.2",
+    "astro": "^3.6.4",
     "astro-navbar": "^2.2.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
