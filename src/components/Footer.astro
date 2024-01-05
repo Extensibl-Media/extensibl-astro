@@ -94,7 +94,7 @@ import { NavMap } from "../utils/NavMap";
     const email = await formData!.get("email");
 
     try {
-      await fetch("http://localhost:8888/api/newsletterFormSubmission", {method: "POST", body: JSON.stringify({email})})
+      await fetch("/api/newsletterFormSubmission", {method: "POST", body: JSON.stringify({email})})
     } catch (error) {
       console.log(error)
     }
