@@ -1,81 +1,30 @@
 ---
-import Layout from "../layouts/Layout.astro"
-import TestimonialsSection from "../components/Homepage/TestimonialsSection.astro"
-import HeroSection from "../components/LandingPage/HeroSection.astro"
-import WhatWeDoSection from "../components/LandingPage/WhatWeDo.astro"
-import FeaturesSection from "../components/LandingPage/FeaturesSection.astro"
-import PortfolioGridSection from "../components/Homepage/PortfolioGridSection.astro"
-import PricingSection from "../components/LandingPage/Pricing.astro"
+import HeroSection from "../components/Homepage/HeroSection.astro";
+import ShortBioSection from "../components/Homepage/ShortBioSection.astro";
+import ServicesSection from '../components/Homepage/ServicesSection.astro'
+import Layout from "../layouts/Layout.astro";
+import TestimonialsSection from "../components/Homepage/TestimonialsSection.astro";
+import CallToAction from "../components/CallToAction.astro"
+import ProcessSection from "../components/Homepage/ProcessSection.astro";
+import BentoSection from "../components/Homepage/BentoGrid.astro"
+import TechStack from "../components/Homepage/TechStackSection.astro"
+import PortfolioSection from "../components/Homepage/PortfolioGridSection.astro"
 
 import {getCollection} from "astro:content"
-import CallToAction from "../components/CallToAction.astro"
+import PricingTableSection from "../components/Pricing/PricingTableSection.astro";
 
 const allWorks = await getCollection('works')
 const recentWorks = allWorks.slice(0, 6)
 ---
 
-<Layout title="Web Design for Local Business - Extensibl Media" description="Comprehensive website and maintenance for your business for $0 down, $200/month">
-  <HeroSection />
-  <section class="mt-20 flex flex-col gap-8 items-center px-4 pt-0 overflow-x-hidden overflow-y-auto">
-    <div class="container mx-auto">
-      <h2 class="lg:text-center text-3xl md:text-4xl lg:text-5xl font-semibold !leading-tight">Our Services</h2>
-      <div class="grid grid-cols-3 gap-8 py-12">
-        <div class="col-span-3 lg:col-span-1 relative lg:text-center">
-          <div class="absolute z-10 bg-brand-dark top-0 bottom-0 right-0 left-0 rounded-md"></div>
-          <div class="h-full flex flex-col lg:items-center border-2 border-brand-dark relative z-20 hover:-translate-x-2 hover:-translate-y-2 transition-all duration-200 rounded-md p-4 bg-white">
-            <script defer src="https://cdn.lordicon.com/lordicon.js"></script>
-            <lord-icon
-                src="https://cdn.lordicon.com/xirobkro.json"
-                trigger="loop"
-                delay=2000
-                colors="primary:#121331,secondary:#7de2d1"
-                style="width:5rem;height:5rem">
-              </lord-icon>
-              <h3 class="font-bold text-2xl">Web Design</h3>
-              <p class="mt-4">Our talented designers use the latest platforms and tools to craft you a beautiful, responsive website you and your customers will love.</p>
-          </div>
-        </div>
-        <div class="col-span-3 lg:col-span-1 relative lg:text-center">
-          <div class="absolute z-10 bg-brand-dark top-0 bottom-0 right-0 left-0 rounded-md"></div>
-          <div class="h-full flex flex-col lg:items-center border-2 border-brand-dark relative z-20 hover:-translate-x-2 hover:-translate-y-2 transition-all duration-200 rounded-md p-4 bg-white">
-            <lord-icon
-              src="https://cdn.lordicon.com/unukghxb.json"
-              trigger="loop"
-              delay=2000
-              colors="primary:#121331,secondary:#7de2d1"
-              style="width:5rem;height:5rem">
-            </lord-icon>
-            <h3 class="font-bold text-2xl">SEO & Content Writing</h3>
-            <p class="mt-4">Our SEO experts will help increase your website's page ranking today using the latest tools and a plan customized for your business.</p>
-          </div>
-        </div>
-        <div class="col-span-3 lg:col-span-1 relative lg:text-center">
-          <div class="absolute z-10 bg-brand-dark top-0 bottom-0 right-0 left-0 rounded-md"></div>
-          <div class="h-full flex flex-col lg:items-center border-2 border-brand-dark relative z-20 hover:-translate-x-2 hover:-translate-y-2 transition-all duration-200 rounded-md p-4 bg-white">
-            <lord-icon
-              src="https://cdn.lordicon.com/piwupaqb.json"
-              trigger="loop"
-              delay=2000
-              colors="primary:#121331,secondary:#7de2d1"
-              style="width:5rem;height:5rem">
-            </lord-icon>
-            <h3 class="font-bold text-2xl">Digital Marketing</h3>
-            <p class="mt-4">Whether you need a Google Ads campaign, Social Media Management services, or  a custom solution, we have you covered. ​</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-  </section>
-  <WhatWeDoSection />
-  <FeaturesSection />
-  <PortfolioGridSection recentWorks={recentWorks}/>
-  <PricingSection />
-  <CallToAction 
-    heading="Grow your business on the modern web, without breaking the bank" 
-    subHeading="Book a call with us today to learn how we can help your business grow with our affordable subscription plans" 
-    buttonText="Book A Call Today" 
-    ctaLink="https://calendly.com/extensibl-media/discovery-call"
-  />
-  <TestimonialsSection />
+<Layout title="Design And Dev Subscriptions for Agencies & Startups - Extensibl Media" description="Scale your agency or startup production team instantly with our white label services for agencies and startups.">
+	<HeroSection/>
+	<ShortBioSection />
+	<ProcessSection />
+  <BentoSection />
+  <TechStack />
+  <PortfolioSection recentWorks={recentWorks}/>
+	<PricingTableSection />
+	<CallToAction heading="Scale your team without the extra overhead" subHeading="Build your dream team with our scalable workforce subscription today." buttonText="Book A Call Today" ctaLink="https://calendly.com/extensibl-media/discovery-call"/>
+	<TestimonialsSection />
 </Layout>

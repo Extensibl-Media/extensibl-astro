@@ -23,7 +23,7 @@ export const NavMap: {
     //   path: "/about",
     // },
     {
-      title: "Services",
+      title: "What We Offer",
       path: "#services",
     },
     {
@@ -47,10 +47,13 @@ export const NavMap: {
   },
   footer: {
     Services: [
-      { title: "Web Design", path: "/" },
       {
         title: "Design & Development Subscriptions",
-        path: "/white-label",
+        path: "/",
+      },
+      {
+        title: "Web Design For Local Business",
+        path: "https://www.velocitywebstudio.com",
       },
     ],
     resources: [
