@@ -24,11 +24,11 @@ export const NavMap: {
     // },
     {
       title: "What We Offer",
-      path: "#services",
+      path: "/#services",
     },
     {
       title: "Pricing",
-      path: "#pricing",
+      path: "/#pricing",
     },
     {
       title: "Our Work",
