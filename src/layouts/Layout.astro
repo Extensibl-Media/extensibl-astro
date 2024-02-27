@@ -18,6 +18,12 @@ const { title, description } = Astro.props;
         <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
         <meta name="generator" content={Astro.generator} />
         <title>{title}</title>
+
+        <!-- Umami Analytics Script -->
+        <script
+            async
+            src="https://umami-extensibl-production.up.railway.app/script.js"
+            data-website-id="79c07012-13bf-40de-86f6-283a043fa50a"></script>
     </head>
     <body class="bg-brand-background text-brand-dark">
         <SiteNavbar />
@@ -120,8 +126,3 @@ const { title, description } = Astro.props;
         d.getElementsByTagName("head")[0].appendChild(s);
     })();
 </script>
-<script
-    defer
-    data-domain="extensiblmedia.com"
-    src="https://plausible-analytics-production-7f3a.up.railway.app/js/script.js"
-></script>
